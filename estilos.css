@@ -1,11 +1,10 @@
-/* RESET */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background: #0b0b0f;
@@ -13,7 +12,6 @@ body {
     line-height: 1.6;
 }
 
-/* NAVBAR */
 header {
     display: flex;
     justify-content: space-between;
@@ -40,7 +38,6 @@ nav a:hover {
     color: #c084fc;
 }
 
-/* HERO */
 .hero {
     height: 90vh;
     display: flex;
@@ -61,19 +58,16 @@ nav a:hover {
     color: #aaa;
 }
 
-/* SECCIONES */
 section {
     padding: 80px 50px;
 }
 
-/* TITULOS */
 h2 {
     text-align: center;
     margin-bottom: 40px;
     color: #c084fc;
 }
 
-/* SOBRE MI */
 #sobre p {
     max-width: 700px;
     margin: auto;
@@ -81,20 +75,17 @@ h2 {
     color: #bbb;
 }
 
-/* CONTENEDOR */
 .container {
     max-width: 1200px;
     margin: auto;
 }
 
-/* GALERIA */
 .galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
 
-/* TARJETAS */
 .proyecto-card {
     text-decoration: none;
     color: white;
@@ -111,7 +102,6 @@ h2 {
     box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
 }
 
-/* IMAGEN (simulada) */
 .proyecto-imagen {
     height: 180px;
     position: relative;
@@ -120,18 +110,15 @@ h2 {
     justify-content: center;
 }
 
-/* COLORES DIFERENTES */
 .proyecto-1 { background: linear-gradient(135deg, #1a0033, #3b0764); }
 .proyecto-2 { background: linear-gradient(135deg, #0f172a, #581c87); }
 .proyecto-3 { background: linear-gradient(135deg, #020617, #6b21a8); }
 
-/* NUMERO */
 .numero-proyecto {
     font-size: 2rem;
     color: rgba(255,255,255,0.2);
 }
 
-/* OVERLAY */
 .overlay {
     position: absolute;
     width: 100%;
@@ -153,7 +140,6 @@ h2 {
     font-weight: bold;
 }
 
-/* INFO */
 .proyecto-info {
     padding: 20px;
 }
@@ -168,7 +154,6 @@ h2 {
     color: #aaa;
 }
 
-/* ETIQUETA */
 .etiqueta {
     display: inline-block;
     margin-top: 10px;
@@ -178,7 +163,6 @@ h2 {
     font-size: 0.8rem;
 }
 
-/* CONTACTO */
 #contacto {
     background: #0f0f1a;
     text-align: center;
