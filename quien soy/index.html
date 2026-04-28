@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
     <meta charset="UTF-8">
     <title>Nicolas Galvis</title>
@@ -99,8 +99,7 @@
 
     </main>
      <style>
-
-     * {
+* {
   margin: 0; 
   padding: 0; 
   box-sizing: border-box; 
@@ -317,6 +316,87 @@ footer {
 .footer {
  text-align: right;
 }
+
+
+
+@media (max-width: 900px) {
+
+  .imagen-inicio,
+  .texto-inicio {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  .imagen-inicio img {
+    max-width: 300px;
+  }
+
+  .texto-inicio h1 {
+    font-size: 36px;
+  }
+
+  .texto-inicio p {
+    font-size: 20px;
+  }
+
+  .tarjeta {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  nav {
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .nombre-nav,
+  .enlaces-nav {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  .enlaces-nav a {
+    display: inline-block;
+    margin: 10px 10px;
+  }
+
+  .texto-inicio h1 {
+    font-size: 28px;
+  }
+
+  .texto-inicio p {
+    font-size: 18px;
+  }
+
+  .tarjeta {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .quien-soy {
+    padding: 20px;
+  }
+
+  .foto-perfil {
+    width: 180px;
+    height: 180px;
+  }
+
+  .quien-soy p {
+    font-size: 18px !important;
+  }
+
+  footer .footer {
+    text-align: center;
+  }
+}
+
 </style>
 
 </body>
