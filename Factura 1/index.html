@@ -3,175 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Factura FC BARCELONA</title>
+    <title>Factura</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div class="main-wrapper">
-        
-        <header class="encabezado">
-            <div class="header-left">
-                <div class="img_header">
-                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 20L80 50L20 80V20Z" fill="#e8792b"/>
-                    </svg>
-                </div>
-                <div class="headerA">
-                    <h2>EMPRESA</h2>
-                    <p>más que un club</p>
+    <div class="invoice-card">
+        <header class="header-main">
+            <div class="brand">
+                <div class="logo-placeholder"></div>
+                <div class="brand-text">
+                    <h1>Nombre de la Marca</h1>
+                    <p>Wayne Enterprises</p>
                 </div>
             </div>
-
-            <div class="headerB">
-                <h1>Factura</h1>
-                <div class="factura-info">
-                    <div class="factura-row">
-                        <span class="factura-label">Número de factura:</span>
-                        <span class="factura-value">#100911</span>
-                    </div>
-                    <div class="factura-row">
-                        <span class="factura-label">Número de cuenta:</span>
-                        <span class="factura-value">5500 9955 3312</span>
-                    </div>
-                    <div class="factura-row">
-                        <span class="factura-label">Fecha de factura:</span>
-                        <span class="factura-value">05 de abril de 2026</span>
-                    </div>
-                </div>
-            </div>
+            <div class="title-invoice">FACTURA</div>
         </header>
 
-        <main class="cuerpo-factura">
-            
-            <section class="invoice-info">
-                <div class="invoice-to">
-                    <h3 class="orange-title">Facturar a:</h3>
-                    <h4 class="client-name">Joan Laporta.</h4>
-                    <p>Director General, Empresa Ltda.</p>
-                    <p>Teléfono: +57 300 123 4567</p>
-                    <p>Correo: joan.laporta@empresa.com</p>
-                </div>
-                <div class="payment-method">
-                    <h3 class="orange-title">Método de pago:</h3>
-                    <div class="payment-row">
-                        <span class="pay-label">Número de cuenta:</span>
-                        <span class="pay-value">5500 9955 3312</span>
-                    </div>
-                    <div class="payment-row">
-                        <span class="pay-label">Nombre de cuenta:</span>
-                        <span class="pay-value">Joan Laporta.</span>
-                    </div>
-                    <div class="payment-row">
-                        <span class="pay-label">Sucursal:</span>
-                        <span class="pay-value">Camp Nou</span>
-                    </div>
-                </div>
-            </section>
+        <div class="red-bar"></div>
 
-            <table class="invoice-table">
-                <thead>
-                    <tr>
-                        <th class="col-date">Fecha</th>
-                        <th class="col-desc">Descripción</th>
-                        <th class="col-price text-right">Precio</th>
-                        <th class="col-qty text-center">Cantidad</th>
-                        <th class="col-total text-right">Total</th>
-                    </tr>
-                </thead>
-                   
-            </section>
-
-            <table class="invoice-table">
-                <tbody>
-                    <tr>
-                        <td>10 Ene, 2026</td>
-                        <td>Diseño de tarjeta de presentación</td>
-                        <td class="text-right">$300.000</td>
-                        <td class="text-center">2</td>
-                        <td class="text-right">$600.000</td>
-                    </tr>
-                     <tr>
-                        <td>21 Jul, 2026</td>
-                        <td>Diseño del spotyfy Camp Nou</td>
-                        <td class="text-right">$300.000</td>
-                        <td class="text-center">2</td>
-                        <td class="text-right">$600.000</td>
-                    </tr>
-                     <tr>
-                        <td>16 Ene, 2026</td>
-                        <td>Diseño de la aplicación web</td>
-                        <td class="text-right">$300.00</td>
-                        <td class="text-center">5</td>
-                        <td class="text-right">$1.500.000</td>
-                    </tr>
-                     <tr>
-                        <td>18 Feb, 2026</td>
-                        <td> Diseño de la graderia</td>
-                        <td class="text-right">$300.000</td>
-                        <td class="text-center">3</td>
-                        <td class="text-right">$900.000</td>
-                    </tr>
-                    <tr>
-                        <td>19 Jul, 2026</td>
-                        <td>Diseño de volante publicitario</td>
-                        <td class="text-right">$450.00</td>
-                        <td class="text-center">1</td>
-                        <td class="text-right">$450.000</td>
-                    </tr>
-                    <tr>
-                        <td>09 Ene, 2026</td>
-                        <td>Desarrollo de tema personalizado</td>
-                        <td class="text-right">$150.00</td>
-                        <td class="text-center">3</td>
-                        <td class="text-right">$450.000</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <section class="invoice-summary">
-                <div class="summary-box">
-                    <div class="summary-row">
-                        <span class="summary-label">Subtotal:</span>
-                        <span>$4.500.000</span>
-                    </div>
-                    <div class="summary-row">
-                        <span class="summary-label">Impuesto (10%):</span>
-                        <span>$450.000</span>
-                    </div>
-                    <div class="summary-row">
-                        <span class="summary-label">Descuento:</span>
-                        <span>$0.00</span>
-                    </div>
-                    <div class="total-bar">
-                        <span>TOTAL:</span>
-                        <span class="total-amount">$4.950.000</span>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="invoice-footer">
-            <div class="terms-conditions">
-                <h3 class="black-title">Términos y condiciones:</h3>
-                <p>El pago debe realizarse dentro de los 30 días posteriores a la emisión.</p>
-                <p>Los pagos tardíos pueden generar cargos adicionales por mora, el usuario podra
-                     editar su información en cualquier momento.</p>
+        <section class="info-section">
+            <div class="invoice-to">
+                <h3>Factura para:</h3>
+                <p><strong>Bruce Wayne</strong></p>
+                <p>Calle 24 N°5-69,<br>Ubicación, Lorem Ipsum,<br>570xx59x</p> 
             </div>
-            <div class="signature-box">
-                <div class="signature-line"></div>
-                <p>Tu nombre y firma</p>
-                <small style="color: #888; text-transform: uppercase; font-size: 10px;">Gerente de cuenta</small>
+            <div class="invoice-details">
+                <p><strong style="float: left;">Factura #</strong> <span>52148</span></p>
+                <p><strong>Fecha:</strong> <span>11 / 05 / 2026</span></p>
+            </div>
+        </section>
+
+        <table class="items-table">
+            <thead>
+                <tr>
+                    <th class="col-sl">N°</th>
+                    <th class="col-desc">Descripción del Artículo</th>
+                    <th class="col-price">Precio</th>
+                    <th class="col-qty">Cant.</th>
+                    <th class="col-total">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Reloj Rolex de edición limitada</td>
+                    <td>$50.00</td>
+                    <td>1</td>
+                    <td>$50.00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Traje italiano de diseñador</td>
+                    <td>$20.00</td>
+                    <td>3</td>
+                    <td>$60.00</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Auto deportivo Lamborghini</td>
+                    <td>$10.00</td>
+                    <td>2</td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Servicio VIP con chofer privado</td>
+                    <td>$90.00</td>
+                    <td>1</td>
+                    <td>$90.00</td>
+                </tr>
+                <tr class="empty-row"><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr class="empty-row"><td></td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+        </table>
+
+        <footer class="footer-section">
+            <div class="left-col">
+                <p class="thanks">Gracias por hacer negocios con nosotros</p>
+                <div class="payment-info">
+                    <h4>Información de Pago:</h4>
+                    <p>Número de Cuenta: 1234 5678 9012</p>
+                    <p>Nombre de la Cuenta: Bruce Wayne</p>
+                    <p>Detalles Bancarios: Agrega tus datos</p>
+                </div>
+            </div>
+
+            <div class="right-col">
+                <div class="totals">
+                    <div class="total-row"><span>Subtotal:</span> <span>$220.00</span></div>
+                    <div class="total-row"><span>Impuesto:</span> <span>0.00%</span></div>
+                    <div class="total-final"><span>Total:</span> <span>$220.00</span></div>
+                </div>
             </div>
         </footer>
 
-        <div class="footer-decoration">
-            <div class="footer-orange"></div>
-            <div class="footer-white"></div>
-            <div class="footer-black"></div>
-        </div>
+        <section class="terms-signature">
+            <div class="terms">
+                <h4>Términos y Condiciones</h4>
+                <p>Esta factura está sujeta a los términos y condiciones establecidos por la empresa. Gracias por su preferencia y confianza en nuestros servicios.</p>
+            </div>
 
+            <div class="signature">
+                <div class="sign-line"></div>
+                <p>Firma Autorizada</p>
+            </div>
+        </section>
+
+        <div class="bottom-bar"></div>
     </div>
-
 </body>
 </html>
