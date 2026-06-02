@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Santander Aventura: turismo extremo en Santander, Colombia. Parapente, rafting, espeleología, trekking y más. Cruza tus límites, descubre Santander.">
+  <title>Santander Aventura — Cruza tus límites, descubre Santander</title>
+
+  <!-- Tipografías: solo 2 familias (Anton para títulos, Manrope para texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+  <!-- Enlace de accesibilidad para saltar al contenido -->
+  <a class="salto-contenido" href="#inicio">Saltar al contenido</a>
+
+  <!-- ====================== ENCABEZADO / NAVEGACIÓN ====================== -->
+  <header class="encabezado">
+    <nav class="navegacion" aria-label="Navegación principal">
+      <a class="marca" href="#inicio">
+        <img src="./imagenes/logo.png" alt="logo" class="logotipo">
+        <span class="marca-icono" aria-hidden="true"></span>
+        Santander<strong>Aventura</strong>
+      </a>
+
+      <input class="menu-control" id="menu-control" type="checkbox" aria-hidden="true">
+      <label class="menu-boton" for="menu-control" aria-hidden="true">
+        <span class="menu-linea"></span>
+      </label>
+
+      <ul class="menu">
+        <li><a href="#experiencias">Experiencias</a></li>
+        <li><a href="#paquetes">Paquetes</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#testimonios">Opiniones</a></li>
+        <li><a href="#guia">El guía</a></li>
+        <li><a class="menu-reserva" href="#reserva">Reservar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ====================== 1. HERO CINEMATOGRÁFICO ====================== -->
+    <section class="hero" id="inicio">
+      <!-- Imagen de fondo: REEMPLAZAR por vista aérea real del Cañón del Chicamocha -->
+      <div class="hero-fondo" role="img" aria-label="Vista aérea del Cañón del Chicamocha"></div>
+      <div class="hero-velo"></div>
+
+      <div class="hero-contenido">
+        <p class="hero-eslogan">Cruza tus límites, descubre Santander</p>
+
+        <h1 class="hero-titulo">
+          <span class="hero-titulo-es">Vive la aventura que nunca olvidarás</span>
+          <span class="hero-titulo-en" lang="en">Live the adventure of a lifetime</span>
+        </h1>
+
+        <div class="hero-acciones">
+          <a class="boton boton-principal" href="#reserva">Reservar aventura</a>
+          <a class="boton boton-secundario" href="#experiencias">Explorar experiencias</a>
+        </div>
+      </div>
+
+      <!-- Indicador para seguir bajando -->
+      <a class="hero-indicador" href="#experiencias" aria-label="Desplázate hacia abajo">
+        <span class="hero-indicador-texto">Desliza</span>
+        <span class="hero-indicador-flecha" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ====================== 2. EXPERIENCIA INMERSIVA (MISIONES) ====================== -->
+    <section class="experiencias" id="experiencias" aria-labelledby="titulo-experiencias">
+      <div class="experiencias-intro">
+        <p class="seccion-etiqueta">Tu misión empieza aquí</p>
+        <h2 class="seccion-titulo" id="titulo-experiencias">No reservas un tour. Aceptas un desafío.</h2>
+      </div>
+
+      <!-- Misión 1 -->
+      <article class="mision mision-izquierda">
+        <div class="mision-imagen mision-imagen-uno" role="img" aria-label="Parapentista volando sobre el valle"></div>
+        <div class="mision-texto">
+          <span class="mision-numero" aria-hidden="true">01</span>
+          <p class="mision-pregunta">¿Te atreves a volar?</p>
+          <h3 class="mision-actividad">Parapente</h3>
+          <p class="mision-detalle">Salta al vacío y deja que las corrientes térmicas del cañón te sostengan. El cielo de Santander es tu territorio.</p>
+          <a class="enlace-flecha" href="#paquetes">Aceptar el desafío</a>
+        </div>
+      </article>
+
+      <!-- Misión 2 -->
+      <article class="mision mision-derecha">
+        <div class="mision-imagen mision-imagen-dos" role="img" aria-label="Balsa cruzando rápidos en el río"></div>
+        <div class="mision-texto">
+          <span class="mision-numero" aria-hidden="true">02</span>
+          <p class="mision-pregunta">¿Puedes dominar la corriente?</p>
+          <h3 class="mision-actividad">Rafting</h3>
+          <p class="mision-detalle">Rápidos clase III y IV en el Río Suárez. Rema con tu equipo, lee el agua y conquista cada ola.</p>
+          <a class="enlace-flecha" href="#paquetes">Aceptar el desafío</a>
+        </div>
+      </article>
+
+      <!-- Misión 3 -->
+      <article class="mision mision-izquierda">
+        <div class="mision-imagen mision-imagen-tres" role="img" aria-label="Explorador dentro de una cueva oscura"></div>
+        <div class="mision-texto">
+          <span class="mision-numero" aria-hidden="true">03</span>
+          <p class="mision-pregunta">¿Te atreves a entrar en la oscuridad?</p>
+          <h3 class="mision-actividad">Espeleología</h3>
+          <p class="mision-detalle">Desciende a la Cueva del Indio. Sin luz, sin ruido, solo tú y el latido de la montaña.</p>
+          <a class="enlace-flecha" href="#paquetes">Aceptar el desafío</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- ====================== 3. PAQUETES TURÍSTICOS ====================== -->
+    <section class="paquetes" id="paquetes" aria-labelledby="titulo-paquetes">
+      <div class="paquetes-intro">
+        <p class="seccion-etiqueta">Elige tu expedición</p>
+        <h2 class="seccion-titulo" id="titulo-paquetes">Paquetes de aventura</h2>
+      </div>
+
+      <div class="paquetes-rejilla">
+
+        <!-- Paquete 1 -->
+        <article class="tarjeta-paquete">
+          <div class="tarjeta-imagen tarjeta-imagen-parapente">
+            <span class="tarjeta-precio">$180.000</span>
+            <span class="tarjeta-dificultad dificultad-media">Dificultad media</span>
+          </div>
+          <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-titulo">Parapente en Mesa de Ruitoque</h3>
+            <p class="tarjeta-duracion"><span class="punto" aria-hidden="true"></span>1 día</p>
+            <p class="tarjeta-incluye-titulo">Qué incluye</p>
+            <ul class="tarjeta-incluye">
+              <li>Vuelo con piloto certificado</li>
+              <li>Equipo de seguridad completo</li>
+              <li>Video del vuelo</li>
+              <li>Transporte y refrigerio</li>
+            </ul>
+            <a class="boton boton-tarjeta" href="#reserva">Reservar</a>
+          </div>
+        </article>
+
+        <!-- Paquete 2 -->
+        <article class="tarjeta-paquete">
+          <div class="tarjeta-imagen tarjeta-imagen-rafting">
+            <span class="tarjeta-precio">$120.000</span>
+            <span class="tarjeta-dificultad dificultad-alta">Dificultad alta</span>
+          </div>
+          <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-titulo">Rafting en Río Suárez</h3>
+            <p class="tarjeta-duracion"><span class="punto" aria-hidden="true"></span>1 día</p>
+            <p class="tarjeta-incluye-titulo">Qué incluye</p>
+            <ul class="tarjeta-incluye">
+              <li>Balsa y guía profesional</li>
+              <li>Casco, chaleco y remo</li>
+              <li>Traje de neopreno</li>
+              <li>Hidratación e instrucción</li>
+            </ul>
+            <a class="boton boton-tarjeta" href="#reserva">Reservar</a>
+          </div>
+        </article>
+
+        <!-- Paquete 3 -->
+        <article class="tarjeta-paquete">
+          <div class="tarjeta-imagen tarjeta-imagen-chicamocha">
+            <span class="tarjeta-precio">$150.000</span>
+            <span class="tarjeta-dificultad dificultad-baja">Dificultad baja</span>
+          </div>
+          <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-titulo">Cañón del Chicamocha + Panachi</h3>
+            <p class="tarjeta-duracion"><span class="punto" aria-hidden="true"></span>1 día</p>
+            <p class="tarjeta-incluye-titulo">Qué incluye</p>
+            <ul class="tarjeta-incluye">
+              <li>Teleférico ida y vuelta</li>
+              <li>Entrada al parque Panachi</li>
+              <li>Miradores panorámicos</li>
+              <li>Transporte y almuerzo</li>
+            </ul>
+            <a class="boton boton-tarjeta" href="#reserva">Reservar</a>
+          </div>
+        </article>
+
+        <!-- Paquete 4 -->
+        <article class="tarjeta-paquete">
+          <div class="tarjeta-imagen tarjeta-imagen-espeleologia">
+            <span class="tarjeta-precio">$90.000</span>
+            <span class="tarjeta-dificultad dificultad-media">Dificultad media</span>
+          </div>
+          <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-titulo">Espeleología en Cueva del Indio</h3>
+            <p class="tarjeta-duracion"><span class="punto" aria-hidden="true"></span>Medio día</p>
+            <p class="tarjeta-incluye-titulo">Qué incluye</p>
+            <ul class="tarjeta-incluye">
+              <li>Casco con linterna</li>
+              <li>Guía espeleólogo</li>
+              <li>Recorrido subterráneo</li>
+              <li>Seguro de aventura</li>
+            </ul>
+            <a class="boton boton-tarjeta" href="#reserva">Reservar</a>
+          </div>
+        </article>
+
+        <!-- Paquete 5 -->
+        <article class="tarjeta-paquete">
+          <div class="tarjeta-imagen tarjeta-imagen-trekking">
+            <span class="tarjeta-precio">$80.000</span>
+            <span class="tarjeta-dificultad dificultad-baja">Dificultad baja</span>
+          </div>
+          <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-titulo">Trekking Camino Real Barichara–Guane</h3>
+            <p class="tarjeta-duracion"><span class="punto" aria-hidden="true"></span>Medio día</p>
+            <p class="tarjeta-incluye-titulo">Qué incluye</p>
+            <ul class="tarjeta-incluye">
+              <li>Guía local certificado</li>
+              <li>Recorrido histórico empedrado</li>
+              <li>Visita al pueblo de Guane</li>
+              <li>Hidratación</li>
+            </ul>
+            <a class="boton boton-tarjeta" href="#reserva">Reservar</a>
+          </div>
+        </article>
+
+        <!-- Paquete 6: destacado -->
+        <article class="tarjeta-paquete tarjeta-destacada">
+          <span class="cinta-destacada" aria-hidden="true">El más extremo</span>
+          <div class="tarjeta-imagen tarjeta-imagen-extremo">
+            <span class="tarjeta-precio">$650.000</span>
+            <span class="tarjeta-dificultad dificultad-alta">Dificultad alta</span>
+          </div>
+          <div class="tarjeta-cuerpo">
+            <h3 class="tarjeta-titulo">Paquete Extremo</h3>
+            <p class="tarjeta-duracion"><span class="punto" aria-hidden="true"></span>3 días / 2 noches</p>
+            <p class="tarjeta-incluye-titulo">Qué incluye</p>
+            <ul class="tarjeta-incluye">
+              <li>Parapente + rafting + espeleología</li>
+              <li>Trekking y Chicamocha</li>
+              <li>Alojamiento y todas las comidas</li>
+              <li>Transporte y guía dedicado</li>
+            </ul>
+            <a class="boton boton-tarjeta" href="#reserva">Reservar</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ====================== 4. ESTADÍSTICAS ====================== -->
+    <section class="estadisticas" aria-labelledby="titulo-estadisticas">
+      <div class="estadisticas-velo"></div>
+      <h2 class="oculto-visual" id="titulo-estadisticas">Nuestros números</h2>
+      <div class="estadisticas-lista">
+        <div class="estadistica">
+          <span class="estadistica-numero">+500</span>
+          <span class="estadistica-etiqueta">Turistas felices</span>
+        </div>
+        <div class="estadistica">
+          <span class="estadistica-numero">98%</span>
+          <span class="estadistica-etiqueta">Satisfacción</span>
+        </div>
+        <div class="estadistica">
+          <span class="estadistica-numero">8</span>
+          <span class="estadistica-etiqueta">Años de experiencia</span>
+        </div>
+        <div class="estadistica">
+          <span class="estadistica-numero">6</span>
+          <span class="estadistica-etiqueta">Experiencias extremas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== 5. GALERÍA DE EXPERIENCIAS ====================== -->
+    <section class="galeria-aventuras" id="galeria" aria-labelledby="titulo-galeria">
+      <div class="galeria-intro">
+        <p class="seccion-etiqueta">Momentos reales</p>
+        <h2 class="seccion-titulo" id="titulo-galeria">Galería de adrenalina</h2>
+      </div>
+
+      <div class="galeria-collage">
+        <figure class="galeria-elemento galeria-uno">
+          <div class="galeria-imagen galeria-img-parapente" role="img" aria-label="Parapente sobre la montaña"></div>
+          <figcaption>Parapente</figcaption>
+        </figure>
+        <figure class="galeria-elemento galeria-dos">
+          <div class="galeria-imagen galeria-img-rafting" role="img" aria-label="Rafting en el río"></div>
+          <figcaption>Rafting</figcaption>
+        </figure>
+        <figure class="galeria-elemento galeria-tres">
+          <div class="galeria-imagen galeria-img-chicamocha" role="img" aria-label="Cañón del Chicamocha"></div>
+          <figcaption>Chicamocha</figcaption>
+        </figure>
+        <figure class="galeria-elemento galeria-cuatro">
+          <div class="galeria-imagen galeria-img-senderismo" role="img" aria-label="Senderismo en el Camino Real"></div>
+          <figcaption>Senderismo</figcaption>
+        </figure>
+        <figure class="galeria-elemento galeria-cinco">
+          <div class="galeria-imagen galeria-img-cueva" role="img" aria-label="Interior de la Cueva del Indio"></div>
+          <figcaption>Cueva del Indio</figcaption>
+        </figure>
+        <figure class="galeria-elemento galeria-seis">
+          <div class="galeria-imagen galeria-img-campamento" role="img" aria-label="Campamento bajo las estrellas"></div>
+          <figcaption>Campamentos</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ====================== 6. SECCIÓN DE VIDEOS ====================== -->
+    <section class="videos" id="videos" aria-labelledby="titulo-videos">
+      <div class="videos-intro">
+        <p class="seccion-etiqueta">Mira antes de saltar</p>
+        <h2 class="seccion-titulo" id="titulo-videos">La aventura en movimiento</h2>
+      </div>
+
+      <div class="videos-rejilla">
+        <!-- Video 1: parapente CON audio (controles visibles) -->
+        <figure class="video-elemento video-destacado">
+          <video class="video-marco" controls preload="metadata"
+                 poster="https://picsum.photos/seed/videoparapente/960/540">
+            <!-- REEMPLAZAR por el archivo de video real -->
+            <source src="videos/parapente.mp4" type="video/mp4">
+            Tu navegador no admite video HTML5.
+          </video>
+          <figcaption>Parapente · con audio</figcaption>
+        </figure>
+
+        <!-- Video 2: rafting SIN audio (silenciado, reproducción automática) -->
+        <figure class="video-elemento">
+          <video class="video-marco" autoplay muted loop playsinline preload="metadata"
+                 poster="https://picsum.photos/seed/videorafting/640/420">
+            <source src="videos/rafting.mp4" type="video/mp4">
+            Tu navegador no admite video HTML5.
+          </video>
+          <figcaption>Rafting · sin audio</figcaption>
+        </figure>
+
+        <!-- Video 3: trekking SIN audio -->
+        <figure class="video-elemento">
+          <video class="video-marco" autoplay muted loop playsinline preload="metadata"
+                 poster="https://picsum.photos/seed/videotrekking/640/420">
+            <source src="videos/trekking.mp4" type="video/mp4">
+            Tu navegador no admite video HTML5.
+          </video>
+          <figcaption>Trekking · sin audio</figcaption>
+        </figure>
+
+        <!-- Video 4: chicamocha SIN audio -->
+        <figure class="video-elemento">
+          <video class="video-marco" autoplay muted loop playsinline preload="metadata"
+                 poster="https://picsum.photos/seed/videochicamocha/640/420">
+            <source src="videos/chicamocha.mp4" type="video/mp4">
+            Tu navegador no admite video HTML5.
+          </video>
+          <figcaption>Chicamocha · sin audio</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ====================== 7. TESTIMONIOS ====================== -->
+    <section class="testimonios" id="testimonios" aria-labelledby="titulo-testimonios">
+      <div class="testimonios-intro">
+        <p class="seccion-etiqueta">Lo que dicen los valientes</p>
+        <h2 class="seccion-titulo" id="titulo-testimonios">Opiniones reales</h2>
+      </div>
+
+      <div class="testimonios-lista">
+        <article class="tarjeta-testimonio">
+          <p class="testimonio-comentario">El parapente en Ruitoque fue lo mejor que he hecho en mi vida. Camilo me dio toda la confianza para saltar.</p>
+          <div class="testimonio-autor">
+            <div class="testimonio-foto testimonio-foto-uno" role="img" aria-label="Foto de Laura Restrepo"></div>
+            <div>
+              <p class="testimonio-nombre">Laura Restrepo</p>
+              <p class="testimonio-lugar">Medellín, Colombia</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta-testimonio">
+          <p class="testimonio-comentario">El rafting en el Río Suárez fue pura adrenalina. Organización impecable y guías de primer nivel.</p>
+          <div class="testimonio-autor">
+            <div class="testimonio-foto testimonio-foto-dos" role="img" aria-label="Foto de Andrés Gómez"></div>
+            <div>
+              <p class="testimonio-nombre">Andrés Gómez</p>
+              <p class="testimonio-lugar">Bogotá, Colombia</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta-testimonio">
+          <p class="testimonio-comentario">An unforgettable experience. The Chicamocha canyon is breathtaking and the team made us feel safe the entire time.</p>
+          <div class="testimonio-autor">
+            <div class="testimonio-foto testimonio-foto-tres" role="img" aria-label="Foto de Sophie Müller"></div>
+            <div>
+              <p class="testimonio-nombre">Sophie Müller</p>
+              <p class="testimonio-lugar">Berlín, Alemania</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta-testimonio">
+          <p class="testimonio-comentario">The caving tour was thrilling and beautifully guided. Santander is now my favorite adventure destination.</p>
+          <div class="testimonio-autor">
+            <div class="testimonio-foto testimonio-foto-cuatro" role="img" aria-label="Foto de James Carter"></div>
+            <div>
+              <p class="testimonio-nombre">James Carter</p>
+              <p class="testimonio-lugar">Toronto, Canadá</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ====================== 8. SOBRE EL GUÍA ====================== -->
+    <section class="guia" id="guia" aria-labelledby="titulo-guia">
+      <div class="guia-foto" role="img" aria-label="Fotografía profesional de Camilo Pinzón, guía de aventura"></div>
+
+      <div class="guia-texto">
+        <p class="seccion-etiqueta">Tu guía de expedición</p>
+        <h2 class="seccion-titulo" id="titulo-guia">Camilo Pinzón</h2>
+        <p class="guia-descripcion">
+          Nacido entre las montañas de Santander, Camilo convirtió su pasión por el cañón en su forma de vida.
+          Con más de una década recorriendo cada sendero, río y cueva de la región, es hoy uno de los
+          guías de turismo de aventura más respetados del departamento.
+        </p>
+        <p class="guia-descripcion">
+          Su filosofía es simple: el riesgo se controla con preparación, y la libertad se gana con respeto por la naturaleza.
+          Cada expedición con él es una historia que sus viajeros recuerdan para toda la vida.
+        </p>
+
+        <ul class="guia-certificaciones">
+          <li>Guía profesional certificado en turismo de aventura</li>
+          <li>Piloto de parapente con licencia internacional</li>
+          <li>Instructor de rafting y rescate en aguas rápidas</li>
+          <li>Primeros auxilios y manejo de emergencias en montaña</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ====================== 9. INFORMACIÓN PRÁCTICA ====================== -->
+    <section class="informacion-practica" aria-labelledby="titulo-info">
+      <div class="info-intro">
+        <p class="seccion-etiqueta">Antes de partir</p>
+        <h2 class="seccion-titulo" id="titulo-info">Información práctica</h2>
+      </div>
+
+      <div class="info-rejilla">
+        <article class="info-bloque">
+          <h3 class="info-titulo">Qué llevar</h3>
+          <ul class="lista-chequeo">
+            <li>Bloqueador solar</li>
+            <li>Ropa cómoda</li>
+            <li>Hidratación</li>
+            <li>Zapatos de trekking</li>
+            <li>Gorra</li>
+          </ul>
+        </article>
+
+        <article class="info-bloque">
+          <h3 class="info-titulo">Recomendaciones</h3>
+          <ul class="lista-chequeo">
+            <li>Llegar temprano al punto de encuentro</li>
+            <li>Seguir siempre las instrucciones del guía</li>
+            <li>Revisar el clima antes de salir</li>
+          </ul>
+        </article>
+
+        <article class="info-bloque info-bloque-aviso">
+          <h3 class="info-titulo">Política de cancelación</h3>
+          <p class="info-aviso">Aceptamos cancelaciones con un mínimo de</p>
+          <p class="info-aviso-destacado">48 horas de anticipación</p>
+          <p class="info-aviso">para reembolso o reprogramación de tu aventura.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ====================== 10. FORMULARIO DE RESERVA ====================== -->
+    <section class="reserva" id="reserva" aria-labelledby="titulo-reserva">
+      <div class="reserva-marco">
+        <div class="reserva-intro">
+          <p class="seccion-etiqueta">Da el primer paso</p>
+          <h2 class="seccion-titulo" id="titulo-reserva">Reserva tu aventura</h2>
+          <p class="reserva-texto">Completa el formulario y nuestro equipo confirmará tu cupo en menos de 24 horas.</p>
+        </div>
+
+        <!-- action por correo: sin JS. REEMPLAZAR por el endpoint/correo real -->
+        <form class="formulario-reserva" action="mailto:reservas@santanderaventura.co" method="post" enctype="text/plain">
+          <div class="campo">
+            <label for="paquete">Paquete</label>
+            <select id="paquete" name="paquete" required>
+              <option value="" selected disabled>Selecciona un paquete</option>
+              <option>Parapente en Mesa de Ruitoque</option>
+              <option>Rafting en Río Suárez</option>
+              <option>Cañón del Chicamocha + Panachi</option>
+              <option>Espeleología en Cueva del Indio</option>
+              <option>Trekking Camino Real Barichara–Guane</option>
+              <option>Paquete Extremo</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="fecha">Fecha</label>
+            <input id="fecha" name="fecha" type="date" required>
+          </div>
+
+          <div class="campo">
+            <label for="personas">Número de personas</label>
+            <input id="personas" name="personas" type="number" min="1" max="20" value="1" required>
+          </div>
+
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Tu nombre completo" required>
+          </div>
+
+          <div class="campo">
+            <label for="correo">Correo</label>
+            <input id="correo" name="correo" type="email" placeholder="nombre@correo.com" required>
+          </div>
+
+          <div class="campo">
+            <label for="telefono">Teléfono</label>
+            <input id="telefono" name="telefono" type="tel" placeholder="+57 300 000 0000" required>
+          </div>
+
+          <div class="campo campo-ancho">
+            <label for="observaciones">Observaciones</label>
+            <textarea id="observaciones" name="observaciones" rows="4" placeholder="Cuéntanos cualquier detalle especial"></textarea>
+          </div>
+
+          <div class="campo campo-ancho">
+            <button class="boton boton-principal boton-enviar" type="submit">Enviar reserva</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================== 11. FOOTER ====================== -->
+  <footer class="pie" aria-labelledby="titulo-pie">
+    <h2 class="oculto-visual" id="titulo-pie">Información de contacto</h2>
+    <div class="pie-contenido">
+
+      <div class="pie-marca">
+        <a class="marca marca-pie" href="#inicio">
+          <span class="marca-icono" aria-hidden="true"></span>
+          Santander<strong>Aventura</strong>
+        </a>
+        <p class="pie-eslogan">Cruza tus límites, descubre Santander.</p>
+      </div>
+
+      <div class="pie-columna">
+        <h3 class="pie-titulo">Contacto</h3>
+        <ul class="pie-lista">
+          <li><a href="https://wa.me/573000000000">WhatsApp: +57 300 000 0000</a></li>
+          <li><a href="mailto:reservas@santanderaventura.co">reservas@santanderaventura.co</a></li>
+          <li class="pie-ubicacion">San Gil, Santander, Colombia</li>
+        </ul>
+      </div>
+
+      <div class="pie-columna">
+        <h3 class="pie-titulo">Síguenos</h3>
+        <ul class="pie-redes">
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="YouTube">YouTube</a></li>
+          <li><a href="#" aria-label="TikTok">TikTok</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="pie-derechos">© 2025 Santander Aventura. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
