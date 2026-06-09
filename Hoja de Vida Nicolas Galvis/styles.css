@@ -1,0 +1,45 @@
+.emcabezado{
+    
+    padding: 5px;
+    text-align: center;
+    background-color: grey;
+    color:maroon;
+}
+
+.subtitulos{
+background-color: #f2f2f2;
+   padding: 5px;
+    text-align: center;
+    
+}
+.parrafo{
+    text-align: center;
+    color:black;
+    background-color: azure;
+    padding: 5px;;
+}
+
+.foto{
+    text-align: center;
+}
+
+body{
+    background-image:url(./Paisaje\ 2.jpg);
+    background-repeat:no-repeat;
+     background-size: cover;
+     width: 800px;
+     margin:0 auto;
+}
+.atributos{
+   padding: 5px;
+    text-align: center;
+    }
+.tabla1{
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: azure ;
+    }
+    .otrotono{
+        background-color: #f2f2f2;
+    }
