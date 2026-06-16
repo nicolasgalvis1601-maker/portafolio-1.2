@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OBRUCT — Tienda de Herramientas y Construcción</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles (1).css" />
+</head>
+<body>
+
+  <header class="header" id="inicio">
+    <div class="container header__inner">
+
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden />
+
+      <a href="#inicio" class="logo">
+        <span class="logo__mark">◑</span>
+        <span class="logo__text">OBR<strong>UCT</strong></span>
+      </a>
+
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">Inicio</a></li>
+          <li><a href="#caracteristicas" class="nav__link">Características</a></li>
+          <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+          <li><a href="#servicios" class="nav__link">Servicios</a></li>
+          <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+          <li><a href="#blog" class="nav__link">Blog</a></li>
+          <li><a href="#tienda" class="nav__link nav__link--store">Tienda</a></li>
+          <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+
+
+      <div class="header__actions">
+        <span class="cart-btn" aria-label="Carrito">🛒</span>
+      
+        <label for="nav-toggle" class="hamburger" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </label>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="banner" id="tienda">
+    <div class="banner__overlay"></div>
+    <div class="container banner__inner">
+      <h1 class="banner__title">STORE</h1>
+      <div class="breadcrumb">
+        <span class="breadcrumb__label">You are here:</span>
+        <span>Home</span> <span class="breadcrumb__sep">/</span> <span>Products</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="store container" id="caracteristicas">
+    <div class="store__grid">
+
+      <aside class="sidebar">
+
+        <div class="search">
+          <input type="text" placeholder="Buscar productos..." aria-label="Buscar productos" />
+        </div>
+
+        <div class="widget">
+          <h3 class="widget__title">FILTER BY PRICE</h3>
+          <input type="range" class="price-slider" min="12" max="35" value="35" />
+          <div class="price-filter">
+            <button class="btn btn--filter">Filtrar</button>
+            <span class="price-filter__text">Price: £12 — £35</span>
+          </div>
+        </div>
+
+        <div class="widget" id="servicios">
+          <h3 class="widget__title">CATEGORIES</h3>
+          <ul class="cats">
+            <li><a href="#">Clothing <span>(7)</span></a></li>
+            <li><a href="#">Hoodies <span>(2)</span></a></li>
+            <li><a href="#">Posters <span>(3)</span></a></li>
+            <li><a href="#">T-Shirts <span>(4)</span></a></li>
+          </ul>
+        </div>
+
+        <div class="widget" id="proyectos">
+          <h3 class="widget__title">FEATURED PRODUCTS</h3>
+          <ul class="featured">
+            <li>
+              <div>
+                <div class="featured__name">Taladro Percutor</div>
+                <div class="featured__price">£12.00</div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="featured__name">Martillo Demoledor</div>
+                <div class="featured__price">£18.00</div>
+              </div>
+            </li>
+            <li> 
+              <div>
+                <div class="featured__name">Caja de Herramientas</div>
+                <div class="featured__price">£35.00</div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="featured__name">Kit de Herramientas</div>
+                <div class="featured__price">£20.00</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </aside>
+
+
+      <section class="products">
+        <div class="products__bar">
+          <span class="products__count">Showing 1–9 of 9 results</span>
+          <select class="products__sort" aria-label="Ordenar productos">
+            <option>Default sorting</option>
+            <option>Precio: bajo a alto</option>
+            <option>Precio: alto a bajo</option>
+            <option>Por valoración</option>
+          </select>
+        </div>
+
+        <div class="products__grid">
+        <article class="card">
+          <span class="card__badge">Sale</span>
+          <img src="imagenes de tienda/taladro percutir.jpg" alt="Taladro Percutor" class="card__image" />
+          <h3 class="card__name">Taladro Percutor</h3>
+          <div class="card__stars">★★★★<span class="dim">★</span></div>
+          <div class="card__price"><span class="old">£15.00</span>£12.00</div>
+          <button class="card__add">Agregar al carrito</button>
+        </article>
+        <article class="card">
+          <img src="imagenes de tienda/martillo demoledor.jpg" alt="Martillo Demoledor" class="card__image" />
+          <h3 class="card__name">Martillo Demoledor</h3>
+          <div class="card__stars">★★★★★</div>
+          <div class="card__price">£18.00</div>
+          <button class="card__add">Agregar al carrito</button>
+        </article>
+        <article class="card">
+          <img src="imagenes de tienda/caja de herramientas.jpg" alt="Caja de Herramientas" class="card__image" />
+          <h3 class="card__name">Caja de Herramientas</h3>
+          <div class="card__stars">★★★<span class="dim">★</span><span class="dim">★</span></div>
+          <div class="card__price">£35.00</div>
+          <button class="card__add">Agregar al carrito</button>
+        </article>
+        <article class="card">
+          <img src="imagenes de tienda/kit de hherramientas.avif" alt="Kit de Herramientas" class="card__image" />
+          <h3 class="card__name">Kit de Herramientas</h3>
+          <div class="card__stars">★★★★<span class="dim">★</span></div>
+          <div class="card__price">£20.00</div>
+          <button class="card__add">Agregar al carrito</button>
+        </article>
+        <article class="card">
+          <img src="imagenes de tienda/sierra circulas.avif" alt="Sierra Circular" class="card__image" />
+          <h3 class="card__name">Sierra Circular</h3>
+          <div class="card__stars">★★★★<span class="dim">★</span></div>
+          <div class="card__price">£28.00</div>
+          <button class="card__add">Agregar al carrito</button>
+        </article>
+        <article class="card">
+          <img src="imagenes de tienda/taladro inalambrico.png" alt="Taladro Inalámbrico" class="card__image" />
+          <h3 class="card__name">Taladro Inalámbrico</h3>
+          <div class="card__stars">★★★★★</div>
+          <div class="card__price">£35.00</div>
+          <button class="card__add">Agregar al carrito</button>
+        </article>
+        <article class="card">
+          <img src="imagenes de tienda/atornillador electrico.jpg" alt="Atornillador Eléctrico" class="card__image" />
+          <h3 class="card__name">Atornillador Eléctrico</h3>
+          <div class="card__stars">★★★★<span class="dim">★</span></div>
+          <div class="card__price">£20.00</div>
+          <button class="card__add">Agregar al carrito</button>
+        </article>
+        <article class="card">
+          <img src="imagenes de tienda/sierra caladora.jpg" alt="Sierra Caladora" class="card__image" />
+          <span class="card__badge">Sale</span>
+          <h3 class="card__name">Sierra Caladora</h3>
+          <div class="card__stars">★★<span class="dim">★</span><span class="dim">★</span><span class="dim">★</span></div>
+          <div class="card__price"><span class="old">£16.00</span>£12.00</div>
+          <button class="card__add">Agregar al carrito</button>
+        </article>
+        <article class="card">
+          <img src="imagenes de tienda/lijadora electrica.jpg" alt="Lijadora Eléctrica" class="card__image" />
+          <h3 class="card__name">Lijadora Eléctrica</h3>
+          <div class="card__stars">★★★★★</div>
+          <div class="card__price">£20.00</div>
+          <button class="card__add">Agregar al carrito</button>
+        </article>
+        </div>
+
+        <nav class="pagination">
+          <a href="#" class="pagination__page is-active">1</a>
+          <a href="#" class="pagination__page">2</a>
+          <a href="#" class="pagination__page">→</a>
+        </nav>
+      </section>
+
+    </div>
+  </main>
+
+
+  <footer class="footer" id="contacto">
+    <div class="container footer__grid">
+
+      <!-- A. Sobre nosotros -->
+      <div class="footer__col" id="nosotros">
+        <a href="#inicio" class="logo logo--light">
+          <span class="logo__mark">◑</span>
+          <span class="logo__text">OBR<strong>UCT</strong></span>
+        </a>
+        <p class="footer__about">
+          OBRUCT es una empresa constructora que sirve con orgullo desde 1991.
+          Somos especialistas en construcción de obra nueva, mejoras de locales,
+          renovaciones interiores y exteriores, y ampliaciones de edificios.
+        </p>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat__num">366,119</span>
+            <span class="stat__label">Happy Clients</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">181,920</span>
+            <span class="stat__label">Projects Launch</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- B. Contacto -->
+      <div class="footer__col" id="blog">
+        <h3 class="footer__title">FIND US AT</h3>
+        <ul class="contact-list">
+          <li><strong>Headquarters:</strong><br />66 Nicholson Street, Buffalo, New York, US 14214</li>
+          <li>📞 001-123-456-7890</li>
+          <li>✉️ support@obruct.com</li>
+          <li>📞 001-123-456-7890</li>
+          <li>✉️ manager@obruct.com</li>
+          <li>🕐 Monday – Saturday: 8:00 Am – 18:00 Pm<br />Sunday: Closed</li>
+        </ul>
+      </div>
+
+
+      <div class="footer__col">
+        <h3 class="footer__title">SEND MESSAGE</h3>
+        <form class="contact-form" action="mailto:support@obruct.com" method="post" enctype="text/plain">
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="mail" placeholder="Mail" required />
+          <textarea name="message" rows="3" placeholder="Message" required></textarea>
+          <button type="submit" class="btn btn--yellow">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 OBRUCT — Tienda de Herramientas y Construcción. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
