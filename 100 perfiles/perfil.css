@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+}
+
+.tarjeta {
+    margin: auto;
+    margin-top: 100px;
+    background-color: rgb(204, 202, 202);
+    padding: 10px;
+    width: 300px;
+    height: auto;
+    box-shadow: 10px 10px 15px #0006;
+    border-radius: 10px;
+    border-bottom: 3px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#nombre {
+    text-align: center;
+    cursor: pointer;
+}
+
+#nombre:hover {
+    color: red;
+}
+
+#avatar {
+    height: 170px;
+    width: 170px;
+    align-self: center;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#avatar:hover {
+    transform: scale(1.06);
+}

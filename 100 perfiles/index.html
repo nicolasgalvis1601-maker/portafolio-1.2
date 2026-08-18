@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.18.1/axios.js"></script>
+
+    <title>Usuarios</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Lista de usuarios</h1>
+    <div id="contenedor"></div>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", async () => {
+
+            try {
+
+         
+                let res = await axios.get(
+                    "https://randomuser.me/api/?results=100"
+                )
+
+                let usuarios = res.data.results
+
+                localStorage.setItem(
+                    "usuarios",
+                    JSON.stringify(usuarios)
+                )
+
+                let contenedor = document.getElementById("contenedor")
+
+
+                usuarios.forEach(usuario => {
+                    let tarjeta = document.createElement("div")
+
+                    tarjeta.classList.add("tarjeta")
+
+
+                    tarjeta.innerHTML = `
+                    
+                        <span class="estrella">☆</span>
+
+                        <h2>
+                            ${usuario.name.first} 
+                            ${usuario.name.last}
+                        </h2>
+
+                        <img src="${usuario.picture.large}">
+
+                        <p>
+                            Género: ${usuario.gender}
+                        </p>
+
+                        <p>
+                            Edad: ${usuario.dob.age}
+                        </p>
+
+                    `
+
+
+                    tarjeta.addEventListener("click", () => {
+
+                        window.location.href =
+                            `perfil.html?id=${usuario.login.uuid}`
+
+                    })
+
+                    let estrella =
+                        tarjeta.querySelector(".estrella")
+
+                    estrella.addEventListener("click", (event) => {
+                        event.stopPropagation()
+
+
+                        let favoritos =
+                            JSON.parse(
+                                localStorage.getItem("favoritos")
+                            ) || []
+
+
+                        let existe = favoritos.find(
+                            favorito =>
+                                favorito.login.uuid ===
+                                usuario.login.uuid
+                        )
+
+
+                        if (existe) {
+                            favoritos = favoritos.filter(
+                                favorito =>
+                                    favorito.login.uuid !==
+                                    usuario.login.uuid
+                            )
+                            estrella.textContent = "☆"
+                        } else {
+                            favoritos.push(usuario)
+
+                            estrella.textContent = "★"
+
+                        }
+
+                        localStorage.setItem(
+                            "favoritos",
+                            JSON.stringify(favoritos)
+                        )
+                    })
+
+
+                    contenedor.appendChild(tarjeta)
+                })
+            } catch (error) {
+                console.error("Error al obtener usuarios:", error)
+
+            }
+
+        })
+
+    </script>
+
+</body>
+
+</html>

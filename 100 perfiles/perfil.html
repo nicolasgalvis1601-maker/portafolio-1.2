@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Perfil de usuario</title>
+
+    <link rel="stylesheet" href="perfil.css">
+
+</head>
+
+<body>
+
+    <div class="tarjeta">
+        <h1 id="nombre"></h1>
+        <img
+            id="avatar"
+            alt="Foto del usuario"
+        >
+        <p id="telefono"></p>
+        <p id="edad"></p>
+        <p id="gmail"></p>
+        <p id="ciudad"></p>
+        <a href="index.html">
+            Volver a usuarios
+        </a>
+
+    </div>
+
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const parametros =
+                new URLSearchParams(window.location.search)
+
+            const idUsuario =
+                parametros.get("id")
+
+            const usuarios =
+                JSON.parse(
+                    localStorage.getItem("usuarios")
+                ) || []
+
+            const usuario =
+                usuarios.find(
+                    usuario =>
+                        usuario.login.uuid === idUsuario
+                )
+
+            if (!usuario) {
+
+                document.querySelector(".tarjeta").innerHTML = `
+
+                    <h1>Usuario no encontrado</h1>
+
+                    <a href="index.html">
+                        Volver a usuarios
+                    </a>
+
+                `
+                return
+
+            }
+            const nombre =
+                document.getElementById("nombre")
+            const img =
+                document.getElementById("avatar")
+            const telefono =
+                document.getElementById("telefono")
+            const edad =
+                document.getElementById("edad")
+            const gmail =
+                document.getElementById("gmail")
+            const ciudad =
+                document.getElementById("ciudad")
+
+            nombre.textContent =
+                `${usuario.name.first} ${usuario.name.last}`
+            img.src =
+                usuario.picture.large
+            telefono.textContent =
+                `Teléfono: ${usuario.cell}`
+            edad.textContent =
+                `Edad: ${usuario.dob.age}`
+            gmail.textContent =
+                `Correo: ${usuario.email}`
+            ciudad.textContent =
+                `Ciudad: ${usuario.location.city}`
+
+        })
+
+    </script>
+
+</body>
+
+</html>
